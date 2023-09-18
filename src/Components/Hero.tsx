@@ -44,6 +44,7 @@ const TransParentBackground = styled.div`
     left: 0;
     right: 0;
     padding-top: 60px;
+    padding-left: 50px;
 `
 const TypeHead = styled.div`
   font-size: 60px;

@@ -80,14 +80,17 @@ const Main = styled.div`
  const PosterImage = styled.div`
     height: 300px;
     width: 350px;
-    background-color: #fff;
+    background-color: #477890;
  `
 
  const Hold = styled.div`
     display: flex;
     gap: 50px;
+   
     justify-content: center;
     margin-top: 100px;
+    padding-left: 50px;
+    /* align-items: center; */
  `
 
 const Second = styled.div`
@@ -106,6 +109,7 @@ const Sub = styled.div`
 
 const P = styled.div`
     font-size: 20px;
+    width: 500px;
 `
 
 const Detailed = () => {
@@ -116,7 +120,8 @@ const Detailed = () => {
         <ContHold>
             <TypeHead>ROVIES</TypeHead>
             <Title>JAGUN JAGUN</Title>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita quasi eveniet harum laudantium illo veniam deserunt mollitia voluptatibus! Laudantium, quia!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita 
+            quasi eveniet harum laudantium illo veniam deserunt mollitia voluptatibus! Laudantium, quia!</p>
             <Button cl="black" bgg="white">
                 <Main>
                     <Icon>
@@ -142,7 +147,8 @@ const Detailed = () => {
             <Second>
                 <H1>Title</H1>
                 <Sub>JAGUN JAGUN</Sub>
-                <H1>Title</H1>
+                <br />
+                <H1>Plot</H1>
                 <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas obcaecati nostrum placeat incidunt quae unde porro. Iusto modi optio dignissimos?</P>
             </Second>
         </Hold>

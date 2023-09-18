@@ -13,16 +13,14 @@ const AllRoutes = createBrowserRouter ([
             {
                 index: true,
                 element: <Homepage />,
-            },
-
-            {
-                path: "detailed",
-                element: <Detailed />
-            },
-
-            
+            },           
         ]
-    }
+    },
+
+    {
+        path: "/detailed/:id",
+        element: <Detailed />
+    },
 ])
 
 export default AllRoutes
