@@ -22,7 +22,7 @@ const Container = styled(Swiper)`
 `
 
 const SwippingSlide = styled(SwiperSlide)<{ bg: string}>`
-    height: 500px;
+    height: 640px;
     width: 100%;
     background-image: url(${(props) => props.bg});
     background-position: center;
@@ -43,7 +43,7 @@ const TransParentBackground = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    padding-top: 60px;
+    padding-top: 120px;
     padding-left: 50px;
 `
 const TypeHead = styled.div`
@@ -63,8 +63,8 @@ const P = styled.div`
 `
 const Button = styled.button<{ bgg: string; cl: string}>`
     /* padding: 20px 50px 25px 35px; */
-    width: 13%;
-    height: 15%;
+    width: 15%;
+    height: 12%;
     background-color: ${(props) => props.bgg};
     color: ${(props) => props.cl};
     border: 0;

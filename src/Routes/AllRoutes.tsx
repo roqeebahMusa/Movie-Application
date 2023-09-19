@@ -6,21 +6,22 @@ import Detailed from "../Pages/Detailed"
 
 const AllRoutes = createBrowserRouter ([
     {
-        path: "/",
-        element: <Weblayouts />,
+		path: "/",
+		element: <Weblayouts />,
+		children: [
+			{
+				index: true,
+				element: <Homepage />,
+			},
+        ],
+    },   
 
-        children: [
             {
-                index: true,
-                element: <Homepage />,
-            },           
-        ]
-    },
+                path: "/detailed/:title/:id",
+                element: <Detailed />,
+            },
+	
+]);
 
-    {
-        path: "/detailed/:id",
-        element: <Detailed />
-    },
-])
 
 export default AllRoutes

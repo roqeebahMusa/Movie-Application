@@ -1,5 +1,7 @@
 import Data from "../../Pages/MoviesData.json"
 import styled from "@emotion/styled"
+import { useState } from "react"
+import { Link } from "react-router-dom"
 
 
 const CardHold = styled.div`
@@ -23,13 +25,21 @@ const CardImage = styled.img`
 const Title = styled.div``
 
 const Card = () => {
+    const [data, setData] = useState(Data);
+
   return (
     <CardHold>
         {
-            Data?.map((props) => (
+            data?.map((props) => (
                 <MainCard>
-                    <CardImage src={props.poster_url} />
+                    <CardImage src={props?.poster_url} />
+                        <Link 
+                               style={{
+                                color: "white",
+                                textDecoration: "none",
+                               }} to={`/detailed/${props.title}/${props.id}`}>
                     <Title>{props?.title}</Title>
+                        </Link>
                 </MainCard>
             ))
         }
